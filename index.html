@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pixel Pet | Mi Tamagotchi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <a class="brand" href="#inicio">♥ PIXEL PET</a>
+    <nav>
+      <a href="#sobre">Sobre la app</a>
+      <a href="#galeria">Galería</a>
+      <a href="#descarga">Descarga</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <p class="eyebrow">VIRTUAL PET PROJECT</p>
+      <h1>TU PROPIA<br><span>AVENTURA PIXEL</span></h1>
+
+      <p class="hero-text">
+        Una pequeña mascota virtual, un mundo de posibilidades.
+        ¡Descubre mi aplicación Tamagotchi!
+      </p>
+
+      <a class="pixel-button" href="#sobre">EXPLORAR APP ➜</a>
+
+      <p class="status">● PROYECTO EN DESARROLLO</p>
+      <div class="pixel-pet" aria-hidden="true">🐣</div>
+      <p class="pet-caption">Tu próxima aventura comienza aquí.</p>
+    </section>
+
+    <section class="section" id="sobre">
+      <p class="eyebrow">01 / INFORMACIÓN</p>
+      <h2>¿QUÉ ES PIXEL PET?</h2>
+      <p class="section-text">
+        Un proyecto de mascota virtual inspirado en los Tamagotchi.
+        Aquí podrás conocer la aplicación y descubrir sus funciones.
+      </p>
+
+      <div class="feature-grid">
+        <article class="feature-card">
+          <span>♥</span>
+          <h3>CUIDA</h3>
+          <p>Descubre las opciones de cuidado de tu mascota.</p>
+        </article>
+
+        <article class="feature-card">
+          <span>★</span>
+          <h3>DESCUBRE</h3>
+          <p>Conoce las funciones de la aplicación.</p>
+        </article>
+
+        <article class="feature-card">
+          <span>♫</span>
+          <h3>DISFRUTA</h3>
+          <p>Explora una experiencia con encanto retro.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section gallery" id="galeria">
+      <p class="eyebrow">02 / VISTA PREVIA</p>
+      <h2>GALERÍA</h2>
+      <p class="section-text">
+        Aquí podrás ver capturas reales de la aplicación.
+      </p>
+
+      <div class="screenshots">
+        <figure>
+          <div class="placeholder">CAPTURA 01</div>
+          <figcaption>Pantalla principal</figcaption>
+        </figure>
+
+        <figure>
+          <div class="placeholder">CAPTURA 02</div>
+          <figcaption>Funciones de la mascota</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="download-section" id="descarga">
+      <p class="eyebrow">03 / PRÓXIMAMENTE</p>
+      <h2>¡PREPARA TU AVENTURA!</h2>
+      <p>
+        La aplicación todavía está en desarrollo.
+        ¡La descarga estará disponible próximamente!
+      </p>
+
+      <button type="button" disabled>
+        DESCARGA PRÓXIMAMENTE
+      </button>
+
+      <p class="version">VERSIÓN 0.1 · EN DESARROLLO</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>PIXEL PET © <span id="year"></span></p>
+    <a href="#inicio">VOLVER AL INICIO ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
