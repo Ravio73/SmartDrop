@@ -3,15 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pixel Pet | Mi Tamagotchi</title>
+  <meta name="theme-color" content="#0b1023">
+  <meta name="description" content="Descubre SmartDrop, una aventura de mascota virtual con minijuegos y personalización.">
+  <title>SmartDrop | Tu pequeño universo virtual</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
 
+  <div class="starfield" id="starfield" aria-hidden="true"></div>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+
   <header class="topbar">
-    <a class="brand" href="#inicio">♥ PIXEL PET</a>
-    <nav>
-      <a href="#sobre">Sobre la app</a>
+    <a class="brand" href="#inicio">
+      <span class="brand-icon">✦</span> SMARTDROP
+    </a>
+
+    <nav aria-label="Navegación principal">
+      <a href="#sobre">Sobre el juego</a>
       <a href="#galeria">Galería</a>
       <a href="#descarga">Descarga</a>
     </nav>
@@ -19,99 +29,191 @@
 
   <main>
     <section class="hero" id="inicio">
-      <p class="eyebrow">VIRTUAL PET PROJECT</p>
-      <h1>TU PROPIA<br><span>AVENTURA PIXEL</span></h1>
+      <div class="hero-content">
+        <p class="eyebrow reveal">✧ TU PEQUEÑO UNIVERSO VIRTUAL ✧</p>
 
-      <p class="hero-text">
-        Una pequeña mascota virtual, un mundo de posibilidades.
-        ¡Descubre mi aplicación Tamagotchi!
+        <h1 class="reveal">
+          UNA PEQUEÑA<br>
+          <span>GRAN AVENTURA</span>
+        </h1>
+
+        <p class="hero-text reveal">
+          Cuida a tu mascota, descubre nuevas actividades
+          y crea tu propia historia en SmartDrop.
+        </p>
+
+        <div class="hero-actions reveal">
+          <a class="pixel-button primary-button" href="#descarga">
+            DESCUBRIR SMARTDROP <span>✦</span>
+          </a>
+          <a class="pixel-button secondary-button" href="#galeria">
+            VER GALERÍA
+          </a>
+        </div>
+
+        <p class="status reveal">
+          <span class="status-dot"></span>
+          PRIMERA VERSIÓN DISPONIBLE
+        </p>
+      </div>
+
+      <div class="pet-stage reveal">
+        <span class="orbit orbit-one" aria-hidden="true">✦</span>
+        <span class="orbit orbit-two" aria-hidden="true">✧</span>
+        <span class="orbit orbit-three" aria-hidden="true">✦</span>
+
+        <div class="pet-glow" aria-hidden="true"></div>
+
+        <div class="pixel-pet" aria-label="Mascota decorativa">
+          🐣
+        </div>
+
+        <span class="pet-sparkle sparkle-one" aria-hidden="true">✦</span>
+        <span class="pet-sparkle sparkle-two" aria-hidden="true">✧</span>
+        <span class="pet-sparkle sparkle-three" aria-hidden="true">⋆</span>
+      </div>
+
+      <p class="pet-caption reveal">
+        <span>♡</span> Tu próxima aventura comienza aquí.
       </p>
 
-      <a class="pixel-button" href="#sobre">EXPLORAR APP ➜</a>
-
-      <p class="status">● PROYECTO EN DESARROLLO</p>
-      <div class="pixel-pet" aria-hidden="true">🐣</div>
-      <p class="pet-caption">Tu próxima aventura comienza aquí.</p>
+      <a class="scroll-cue" href="#sobre" aria-label="Bajar a la siguiente sección">
+        <span>↓</span>
+      </a>
     </section>
 
     <section class="section" id="sobre">
-      <p class="eyebrow">01 / INFORMACIÓN</p>
-      <h2>¿QUÉ ES PIXEL PET?</h2>
-      <p class="section-text">
-        Un proyecto de mascota virtual inspirado en los Tamagotchi.
-        Aquí podrás conocer la aplicación y descubrir sus funciones.
-      </p>
+      <div class="section-heading reveal">
+        <p class="eyebrow">01 / CONOCE EL PROYECTO</p>
+        <h2>UN MUNDO <span>POR DESCUBRIR</span></h2>
+        <p class="section-text">
+          SmartDrop es una aplicación de mascota virtual
+          que reúne cuidado, entretenimiento y personalización
+          en una pequeña aventura digital.
+        </p>
+      </div>
 
       <div class="feature-grid">
-        <article class="feature-card">
-          <span>♥</span>
+        <article class="feature-card reveal">
+          <span class="feature-icon">♡</span>
           <h3>CUIDA</h3>
-          <p>Descubre las opciones de cuidado de tu mascota.</p>
+          <p>
+            Dedica tiempo a tu mascota y descubre sus opciones de cuidado.
+          </p>
+          <span class="card-decoration" aria-hidden="true">✧</span>
         </article>
 
-        <article class="feature-card">
-          <span>★</span>
+        <article class="feature-card reveal">
+          <span class="feature-icon">✦</span>
           <h3>DESCUBRE</h3>
-          <p>Conoce las funciones de la aplicación.</p>
+          <p>
+            Explora las actividades y los minijuegos disponibles.
+          </p>
+          <span class="card-decoration" aria-hidden="true">⋆</span>
         </article>
 
-        <article class="feature-card">
-          <span>♫</span>
-          <h3>DISFRUTA</h3>
-          <p>Explora una experiencia con encanto retro.</p>
+        <article class="feature-card reveal">
+          <span class="feature-icon">♫</span>
+          <h3>PERSONALIZA</h3>
+          <p>
+            Conoce las opciones de apariencia y personalización del juego.
+          </p>
+          <span class="card-decoration" aria-hidden="true">✧</span>
         </article>
+      </div>
+
+      <div class="little-note reveal">
+        <span>✧</span>
+        <p>Un pequeño proyecto con mucho espacio para crecer.</p>
+        <span>✧</span>
       </div>
     </section>
 
     <section class="section gallery" id="galeria">
-      <p class="eyebrow">02 / VISTA PREVIA</p>
-      <h2>GALERÍA</h2>
-      <p class="section-text">
-        Aquí podrás ver capturas reales de la aplicación.
-      </p>
+      <div class="section-heading reveal">
+        <p class="eyebrow">02 / UN VISTAZO AL JUEGO</p>
+        <h2>GALERÍA <span>ESTELAR</span></h2>
+        <p class="section-text">
+          Explora algunas de las pantallas de SmartDrop.
+          Muy pronto, más rincones de este pequeño universo.
+        </p>
+      </div>
 
       <div class="screenshots">
-        <figure>
-          <div class="placeholder">CAPTURA 01</div>
-          <figcaption>Pantalla principal</figcaption>
+        <figure class="screenshot-card reveal">
+          <div class="screenshot-frame">
+            <div class="placeholder">
+              <span class="placeholder-icon">✧</span>
+              <span>CAPTURA 01</span>
+              <small>Añade aquí una captura del juego</small>
+            </div>
+          </div>
+          <figcaption>
+            <span class="caption-number">01</span>
+            Pantalla principal
+          </figcaption>
         </figure>
 
-        <figure>
-          <div class="placeholder">CAPTURA 02</div>
-          <figcaption>Funciones de la mascota</figcaption>
+        <figure class="screenshot-card reveal">
+          <div class="screenshot-frame">
+            <div class="placeholder">
+              <span class="placeholder-icon">✦</span>
+              <span>CAPTURA 02</span>
+              <small>Añade aquí una captura del juego</small>
+            </div>
+          </div>
+          <figcaption>
+            <span class="caption-number">02</span>
+            Actividades y minijuegos
+          </figcaption>
         </figure>
       </div>
     </section>
 
     <section class="download-section" id="descarga">
-      <p class="eyebrow">03 / PRÓXIMAMENTE</p>
-      <h2>¡PREPARA TU AVENTURA!</h2>
-      <p>
-        La aplicación todavía está en desarrollo.
-        ¡La descarga estará disponible próximamente!
-      </p>
+      <div class="download-card reveal">
+        <span class="download-star star-left" aria-hidden="true">✦</span>
+        <span class="download-star star-right" aria-hidden="true">✧</span>
 
-      <button type="button" enabled>
-    <a
-      href="https://github.com/Ravio73/smartdrop-web/releases/download/v1.0.0/SmartDrop.rar"
-      id="download-btn"
-      class="download-button"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-    DESCARGAR SMARTDROP
-  </a>
-        </button>
+        <p class="eyebrow">03 / TU AVENTURA TE ESPERA</p>
+        <h2>¿LISTO PARA <span>JUGAR?</span></h2>
 
-      <p class="version">VERSIÓN 0.1 · EN DESARROLLO</p>
+        <p class="download-description">
+          Descubre SmartDrop y comienza a explorar
+          tu propio mundo de mascotas virtuales.
+        </p>
+
+        <a
+          class="pixel-button download-button"
+          href="https://github.com/Ravio73/smartdrop-web/releases/download/v1.0.0/SmartDrop.rar"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span aria-hidden="true">↓</span>
+          DESCARGAR SMARTDROP
+          <span aria-hidden="true">✦</span>
+        </a>
+
+        <div class="download-meta">
+          <span>◇ VERSIÓN 1.0.0</span>
+          <span>◇ WINDOWS</span>
+        </div>
+
+        <p class="download-help">
+          Descarga el archivo RAR, extrae su contenido y ejecuta
+          <code>SmartDrop.exe</code>.
+          Necesitarás una herramienta compatible para extraer RAR.
+        </p>
+      </div>
     </section>
   </main>
 
   <footer>
-    <p>PIXEL PET © <span id="year"></span></p>
-    <a href="#inicio">VOLVER AL INICIO ↑</a>
+    <a class="footer-brand" href="#inicio">✦ SMARTDROP</a>
+    <p>Un pequeño universo, una gran aventura.</p>
+    <a class="back-top" href="#inicio">VOLVER ARRIBA ↑</a>
+    <p class="copyright">© <span id="year"></span> SMARTDROP</p>
   </footer>
 
-  <script src="script.js"></script>
 </body>
 </html>
